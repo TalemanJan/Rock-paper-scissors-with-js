@@ -9,13 +9,14 @@ function playGame() {
   document.getElementById("para").innerHTML=(`You chose ${userChoice} and the computer chose ${computerChoice}.`);
 
   if (userChoice === computerChoice) {
-    document.write("It's a tie!");
+    document.getElementById("para").innerHTML="It's a tie!";
   } else if (userChoice === "rock" && computerChoice === "scissors" ||
              userChoice === "paper" && computerChoice === "rock" ||
              userChoice === "scissors" && computerChoice === "paper") {
-                document.getElementById("para").innerHTML=(`You chose ${userChoice} and the computer chose ${computerChoice}     Congrats You Win!! `);
+                document.getElementById("para").innerHTML=document.getElementById("para").innerHTML = `You chose ${userChoice} and the computer chose ${computerChoice}\n\nCongrats You Win!!`;
+
   } else {
-    document.getElementById("para").innerHTML="the computer chose"+computerChoice+" The computer wins!";
+    document.getElementById("para").innerHTML="the computer chose" +"  "+"  "+"  "+computerChoice+"  "+" The computer wins!";
   }
 
 }
@@ -26,7 +27,9 @@ playGame();
 
 function again(){
 againn=playGame()
-document.getElementById("para").innerHTML=(`You chose ${userChoice} and the computer chose ${computerChoice}     Congrats You Win!! `)
+document.getElementById("para").innerHTML = `You chose ${userChoice} and the computer chose ${computerChoice}\n\nCongrats You Win!!`;
+
+
 
 }
 
