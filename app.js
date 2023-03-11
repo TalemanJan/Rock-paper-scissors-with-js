@@ -1,3 +1,5 @@
+var againn=document.getElementById("again")
+
 const choices = ["rock", "paper", "scissors"];
 
 function playGame() {
@@ -16,10 +18,14 @@ function playGame() {
    document.write("The computer wins!");
   }
 
-  const playAgain = prompt("Play again? (yes/no)").toLowerCase();
-  if (playAgain === "yes") {
-    playGame();
-  }
 }
 
 playGame();
+
+
+
+function again(){
+playGame()
+
+}
+again()
