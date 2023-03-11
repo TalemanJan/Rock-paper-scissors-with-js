@@ -26,6 +26,7 @@ playGame();
 
 function again(){
 againn=playGame()
+document.getElementById("para").innerHTML=(`You chose ${userChoice} and the computer chose ${computerChoice}     Congrats You Win!! `)
 
 }
 
