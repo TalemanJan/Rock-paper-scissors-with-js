@@ -15,7 +15,7 @@ function playGame() {
              userChoice === "scissors" && computerChoice === "paper") {
                 document.getElementById("para").innerHTML=("para")("You win!");
   } else {
-    document.getElementById("para")("The computer wins!");
+    document.getElementById("para").innerHTML=("The computer wins!");
   }
 
 }
