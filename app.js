@@ -6,16 +6,16 @@ function playGame() {
   const userChoice = prompt("Choose rock, paper, or scissors:");
   const computerChoice = choices[Math.floor(Math.random() * 3)];
 
-  document.write(`You chose ${userChoice} and the computer chose ${computerChoice}.`);
+  document.getElementById("para").innerHTML=(`You chose ${userChoice} and the computer chose ${computerChoice}.`);
 
   if (userChoice === computerChoice) {
     document.write("It's a tie!");
   } else if (userChoice === "rock" && computerChoice === "scissors" ||
              userChoice === "paper" && computerChoice === "rock" ||
              userChoice === "scissors" && computerChoice === "paper") {
-    document.write("You win!");
+                document.getElementById("para")("You win!");
   } else {
-   document.write("The computer wins!");
+    document.getElementById("para")("The computer wins!");
   }
 
 }
