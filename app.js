@@ -13,7 +13,7 @@ function playGame() {
   } else if (userChoice === "rock" && computerChoice === "scissors" ||
              userChoice === "paper" && computerChoice === "rock" ||
              userChoice === "scissors" && computerChoice === "paper") {
-                document.getElementById("para")("You win!");
+                document.getElementById("para").innerHTML=("para")("You win!");
   } else {
     document.getElementById("para")("The computer wins!");
   }
