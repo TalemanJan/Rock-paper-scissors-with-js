@@ -25,7 +25,7 @@ playGame();
 
 
 function again(){
-playGame()
+againn=playGame()
 
 }
-again()
+
