@@ -13,9 +13,9 @@ function playGame() {
   } else if (userChoice === "rock" && computerChoice === "scissors" ||
              userChoice === "paper" && computerChoice === "rock" ||
              userChoice === "scissors" && computerChoice === "paper") {
-                document.getElementById("para").innerHTML=("para")("You win!");
+                document.getElementById("para").innerHTML=(`You chose ${userChoice} and the computer chose ${computerChoice}     Congrats You Win!! `);
   } else {
-    document.getElementById("para").innerHTML=("The computer wins!");
+    document.getElementById("para").innerHTML="the computer chose"+computerChoice+" The computer wins!";
   }
 
 }
