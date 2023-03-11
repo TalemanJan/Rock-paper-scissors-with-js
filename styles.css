@@ -2,6 +2,7 @@ div{
 background: #000;
 color: aliceblue;
 height: 30px;
+text-transform: capitalize;
 }
 
 
@@ -9,6 +10,8 @@ height: 30px;
 button{
 color:#e1e1e1;
 background: #000;
-
+text-transform: capitalize;
 
 }
+
+
